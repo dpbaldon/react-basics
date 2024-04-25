@@ -1,12 +1,20 @@
-import SubjectList from './SubjectList.js'
 import React from 'react';
+import SubjectList from './SubjectList.js'
+import Counter from './Counter.js';
+import WrongCounter from './WrongCounter';
 import TempConverter from './TempConverter';
 
 function App() {
   return (
     <div>
-      <SubjectList data={CMSCSubjects} title={'Computer Science Subjects'} />
-      <SubjectList data={CHEMSubjects} title={'Chemistry'} />
+      <div>
+        Hello World!
+        <SubjectList data={CMSCSubjects} title={'Computer Science'} />
+        <SubjectList data={CHEMSubjects} title={'Chemistry'} />
+        <Counter val={0}/>
+        <WrongCounter val={0}/>
+        <TempConverter />
+      </div>
     </div>
   );
 }
@@ -24,4 +32,3 @@ const CHEMSubjects = [
 ];
 
 export default App;
-<TempConverter />
