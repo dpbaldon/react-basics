@@ -1,4 +1,6 @@
 import SubjectList from './SubjectList.js'
+import React from 'react';
+import TempConverter from './TempConverter';
 
 function App() {
   return (
@@ -22,3 +24,4 @@ const CHEMSubjects = [
 ];
 
 export default App;
+<TempConverter />
